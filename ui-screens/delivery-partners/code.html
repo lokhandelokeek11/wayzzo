@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>wayzo — Hyperlocal Precision Logistics</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#000000", "tertiary-fixed": "#e3e2e2", "on-tertiary": "#ffffff", "inverse-surface": "#2f3130", "surface": "#f9f9f7", "on-secondary-fixed-variant": "#73360b", "on-primary-fixed-variant": "#474646", "surface-tint": "#5f5e5e", "on-tertiary-container": "#848484", "on-secondary-fixed": "#331200", "tertiary-container": "#1b1c1c", "on-error-container": "#93000a", "primary-container": "#1c1b1b", "primary-fixed": "#e5e2e1", "secondary-container": "#ffa673", "error-container": "#ffdad6", "surface-bright": "#f9f9f7", "on-surface-variant": "#444748", "surface-container-high": "#e8e8e6", "surface-container-low": "#f4f4f2", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#ffb68e", "surface-variant": "#e2e3e1", "surface-container-highest": "#e2e3e1", "on-background": "#1a1c1b", "on-primary-fixed": "#1c1b1b", "secondary-fixed": "#ffdbc9", "on-tertiary-fixed-variant": "#464747", "background": "#f9f9f7", "on-surface": "#1a1c1b", "surface-dim": "#dadad8", "inverse-primary": "#c8c6c5", "on-secondary-container": "#783a0f", "outline-variant": "#c4c7c7", "tertiary-fixed-dim": "#c7c6c6", "surface-container-lowest": "#ffffff", "outline": "#747878", "tertiary": "#000000", "on-error": "#ffffff", "secondary": "#904c21", "error": "#ba1a1a", "on-primary-container": "#858383", "surface-container": "#eeeeec", "on-tertiary-fixed": "#1b1c1c", "on-secondary": "#ffffff", "inverse-on-surface": "#f1f1ef", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "margin": "2rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem" }, fontFamily: { "headline-lg": ["Geist"], "display-xl-mobile": ["Geist"], "display-xl": ["Geist"], "body-sm": ["Geist"], "headline-sm": ["Geist"], "label-caps": ["Geist"], "title-md": ["Geist"], "body-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "body-md": ["Geist"], "code-mono": ["JetBrains Mono"], "headline-md": ["Geist"] }, fontSize: { "headline-lg": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-xl-mobile": ["38px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "code-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-container-high transition-all"><div class="h-16 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="wayzo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDj1x3nxABPWwMfgslea218RYFeLGjH04e2ige4WzuKfzmW9rbYxZ6CxoLYpngpnwpyB7GUxVoVwD5MDVo_SrP8jAPP0RL0kjlf807tYNgJoJ9ojUQxRVgSH89BZUYkBJYpGCL49lkxWD4mTVO3FSc3Dzwq_Ssy-4LtGpD-cRRKFihppW38PhtiuZvGrwCdrcvHGXM7RMV_8XhLB2WWH3j_1O4KVvvPcfLJtne3_RPz"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-medium lowercase">wayzo</span></div><nav class="hidden md:flex items-center p-1 rounded-full bg-surface-container-low border border-surface-container-high gap-1" data-active-classes="bg-primary text-on-primary font-medium"><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="platform" href="#">Platform</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="merchants" href="#">Merchants</a><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-colors bg-primary text-on-primary font-medium" data-path="partners" href="#">Partners</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ecosystem" href="#">Ecosystem</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-surface-container-highest font-body-sm text-body-sm text-on-surface hover:border-primary transition-all" data-path="get-started" href="#">Get Started</a><a class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm hover:bg-on-surface-variant transition-colors" data-path="partner-login" href="#">Partner Login</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- SECTION 1: CRED MONOLITH HERO (Cinematic Obsidian #111111) -->
+<section class="relative w-full bg-primary text-on-primary pt-space-xl pb-32 overflow-hidden">
+<!-- Ambient Top Lighting & Carbon Texture Mesh -->
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(255,166,115,0.18),rgba(28,27,27,0))]"></div>
+<div class="absolute inset-0 pointer-events-none opacity-10 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+<div class="relative max-w-[1440px] mx-auto px-margin flex flex-col items-center text-center">
+<!-- Centered Badge -->
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-primary-container shadow-sm mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim uppercase tracking-wider">[ VERIFIED PARTNER ADMISSIONS OPEN ]</span>
+</div>
+<!-- Monumental Headline -->
+<h1 class="font-display-xl text-display-xl text-on-primary max-w-4xl tracking-tight leading-[1.05]">
+        Your wheels. Your time.<br/>Your opportunity.
+      </h1>
+<!-- Centered Subtext -->
+<p class="mt-space-md font-body-lg text-body-lg text-on-primary-container max-w-xl">
+        Join the country’s most respected community-powered delivery network. Transparent payouts, zero middleman deductions, and daily liquidity.
+      </p>
+<!-- Centered Primary CTA -->
+<div class="mt-space-lg flex flex-col sm:flex-row items-center gap-space-md">
+<a class="inline-flex items-center justify-center bg-surface text-primary px-8 py-3.5 rounded-full font-title-md text-title-md shadow-xl hover:bg-surface-bright transition-all transform hover:-translate-y-0.5" href="#onboarding">
+          Apply as a Delivery Partner →
+        </a>
+<a class="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-full bg-primary-container text-on-primary font-body-md text-body-md hover:bg-surface-container-highest/20 transition-all" href="#protocol">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>View Partner Charter</span>
+</a>
+</div>
+<!-- Centerpiece Visual: Editorial Monolith Portrait Frame -->
+<div class="mt-space-xl relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden bg-primary-container shadow-2xl">
+<div class="relative w-full h-[460px] md:h-[580px]">
+<img class="w-full h-full object-cover object-center filter grayscale-[20%] brightness-95" data-alt="Dignified professional delivery partner standing proudly beside a modern matte-black motorcycle during dusk in an urban city. He wears a tailored sleek charcoal technical rider jacket with a minimalist geometric WAYZO monogram badge on the chest. Architectural twilight city lights softly glow in the background with obsidian dark tones, warm amber street reflections, and high-fashion editorial documentary lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmVj7AAUfxOE_046Tz8vKryvpWPj0p3-zhNOGQzf72FOfdmzX_EXbYl_yBWlWPN5TpFEgPE44DBiFZHOi0O9vy8yxC7kKwMTVyB1B8583qDUfWn55bS8yBJgSKXFdri101iRR170Q4-LnGWYYsfXLBwd3-IlofEm7wZ5Ve-i7jRPZocb7YXDjQnb8Zl9kyryjU7-RVTtGuHkgbzb9hSbjiyo-C00GUWpXOpqAnELQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent"></div>
+<!-- Telemetry Earnings Badge Floating Overlay -->
+<div class="absolute bottom-6 left-6 right-6 md:left-auto md:right-8 md:bottom-8 p-space-md bg-primary-container/95 backdrop-blur-md rounded-lg shadow-xl flex items-center justify-between gap-space-lg max-w-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">currency_rupee</span>
+</div>
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-primary-container tracking-wider block">Fleet Benchmark</span>
+<span class="font-headline-md text-headline-md text-on-primary tracking-tight font-medium">£1,650 AVG / DAY</span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-code-mono text-code-mono text-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-ping"></span>
+                LIVE SETTLED
+              </span>
+<span class="block font-body-sm text-body-sm text-on-primary-container">Paid directly via UPI</span>
+</div>
+</div>
+<!-- Subtle Precision Watermark Overlay -->
+<div class="hidden md:flex absolute top-6 left-6 items-center gap-space-xs font-code-mono text-code-mono text-on-primary-container/60 bg-primary/40 px-3 py-1 rounded backdrop-blur-sm">
+<span>LOC: BLR-URBAN-CLUSTER-09</span>
+<span>•</span>
+<span>STATUS: ACTIVE DISPATCH</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: THE FINANCIAL & TRUST ARCHITECTURE -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest block mb-space-xs">Covenant &amp; Settlement</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">The Financial Architecture</h2>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container max-w-md">
+          Engineered for dignity and transparency. We eliminate hidden platform platform fees, latency, and algorithmic unpredictability.
+        </p>
+</div>
+<!-- 3 Editorial Metric Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Metric 1 -->
+<div class="bg-primary-container p-space-xl rounded-xl shadow-lg flex flex-col justify-between group hover:bg-surface-container-highest/10 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim uppercase tracking-wider">PROTOCOL 01</span>
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-secondary-fixed-dim transition-colors">account_balance_wallet</span>
+</div>
+<div class="font-display-xl text-display-xl text-on-primary tracking-tight font-medium mb-space-xs">
+              £0
+            </div>
+<div class="font-title-md text-title-md text-on-primary font-medium mb-space-sm">
+              Platform Deductions
+            </div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+              100% of customer tips, distance bonuses, and high-demand surge pricing flow undiminished to your verified wallet. Zero platform commission skimming.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-code-mono text-code-mono text-on-primary-container">
+<span>SURGE RETENTION</span>
+<span class="text-on-primary font-medium">100.0%</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-primary-container p-space-xl rounded-xl shadow-lg flex flex-col justify-between group hover:bg-surface-container-highest/10 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim uppercase tracking-wider">PROTOCOL 02</span>
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-secondary-fixed-dim transition-colors">bolt</span>
+</div>
+<div class="font-display-xl text-display-xl text-on-primary tracking-tight font-medium mb-space-xs">
+              24h
+            </div>
+<div class="font-title-md text-title-md text-on-primary font-medium mb-space-sm">
+              Daily Guaranteed Payouts
+            </div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+              No weekly batch delays or minimum balance thresholds. Automated direct IMPS and UPI bank transfers trigger precisely every morning at 06:00 IST.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-code-mono text-code-mono text-on-primary-container">
+<span>SETTLEMENT CYCLE</span>
+<span class="text-on-primary font-medium">REAL-TIME IMPS</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-primary-container p-space-xl rounded-xl shadow-lg flex flex-col justify-between group hover:bg-surface-container-highest/10 transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-lg">
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim uppercase tracking-wider">PROTOCOL 03</span>
+<span class="material-symbols-outlined text-on-primary-container group-hover:text-secondary-fixed-dim transition-colors">shield</span>
+</div>
+<div class="font-display-xl text-display-xl text-on-primary tracking-tight font-medium mb-space-xs">
+              £10L
+            </div>
+<div class="font-title-md text-title-md text-on-primary font-medium mb-space-sm">
+              Safety Shield Cover
+            </div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+              Comprehensive accidental coverage, emergency medical triage, family hospitalization support, and dedicated 24/7 on-ground dispatch rescue teams.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between font-code-mono text-code-mono text-on-primary-container">
+<span>EMERGENCY DISPATCH</span>
+<span class="text-on-primary font-medium">&lt; 12 MIN ETA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: 4-STEP VERIFICATION RUNWAY (Clean Minimalist Runway) -->
+<section class="w-full bg-surface py-space-xl" id="onboarding">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-xs">Clear Admissions</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The 4-Step Verification Runway</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Seamless, friction-free verification handled through sovereign identity protocols. Zero physical paperwork queues.
+        </p>
+</div>
+<!-- Minimalist Progression Timeline -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-mono text-code-mono text-secondary font-medium tracking-tight">01 / DISCOVERY</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">badge</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Digital KYC</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant Aadhaar &amp; PAN matching via DigiLocker with privacy-preserving zero-knowledge proofs.</p>
+</div>
+<div class="mt-space-lg pt-space-sm font-code-mono text-code-mono text-on-surface-variant flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Est. 3 Minutes</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-mono text-code-mono text-secondary font-medium tracking-tight">02 / COMPLIANCE</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">two_wheeler</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Vehicle &amp; License</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload RC and commercial driver credentials. EV, petrol bikes, and cycle fleets supported natively.</p>
+</div>
+<div class="mt-space-lg pt-space-sm font-code-mono text-code-mono text-on-surface-variant flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Est. 10 Minutes</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-mono text-code-mono text-secondary font-medium tracking-tight">03 / ORIENTATION</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">school</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-space-xs">Digital Onboarding</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Interactive micro-modules covering cold-chain handling, precise navigation protocols, and etiquette.</p>
+</div>
+<div class="mt-space-lg pt-space-sm font-code-mono text-code-mono text-on-surface-variant flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Est. 15 Minutes</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-primary text-on-primary p-space-lg rounded-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim font-medium tracking-tight">04 / DISPATCH READY</span>
+<span class="material-symbols-outlined text-secondary-container text-[20px]">sensors</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-primary mb-space-xs">Go Online</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">Receive your dynamic hub welcome kit, configure custom shift zones, and accept your initial waypoint run.</p>
+</div>
+<div class="mt-space-lg pt-space-sm font-code-mono text-code-mono text-secondary-container flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>Immediate Activation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: APP PREVIEW (Concept Monolith - Dark Partner Interface) -->
+<section class="w-full bg-surface-container-low py-space-xl overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Explanatory Column -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-[16px]">terminal</span>
+<span class="font-code-mono text-code-mono text-primary font-medium">WAYZO FLEET OS v4.2</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            An instrument engineered for zero distraction.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Built from the ground up to reduce cognitive load while operating in dense traffic. High-contrast typography, single-thumb gesture control, and crystal-clear telemetry.
+          </p>
+<div class="space-y-space-md pt-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-medium">Waypoint Micro-Navigation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sub-meter entrance guidance eliminates searching through apartment wings and commercial parking basements.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">pin</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-medium">Direct PIN Handshake</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fraud-proof 4-digit token validation for zero-dispute customer dropoffs and instantaneous escrow release.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary font-medium">Continuous Liquidity Dial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Track your net earnings per kilometer, completed nodes, and surge bonuses with zero algorithmic latency.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Titanium Smartphone Monolith Mockup -->
+<div class="lg:col-span-7 flex justify-center">
+<div class="relative w-full max-w-[380px] bg-primary p-3 rounded-[3rem] shadow-2xl">
+<!-- Screen Frame -->
+<div class="relative w-full bg-primary-container rounded-[2.5rem] overflow-hidden text-on-primary p-space-md">
+<!-- Top Hardware Island -->
+<div class="w-full flex items-center justify-between pb-3 pt-1 px-2 font-code-mono text-code-mono text-on-primary-container">
+<span>09:41</span>
+<div class="w-20 h-4 bg-primary rounded-full"></div>
+<div class="flex items-center gap-1">
+<span>5G</span>
+<span class="material-symbols-outlined text-[14px]">battery_full</span>
+</div>
+</div>
+<!-- Top Status Bar in Partner App -->
+<div class="flex items-center justify-between py-2 px-1 mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-title-md text-title-md text-on-primary font-medium">Online • Active Route</span>
+</div>
+<span class="font-code-mono text-code-mono px-2 py-0.5 rounded bg-surface/10 text-secondary-fixed-dim">NODE #841</span>
+</div>
+<!-- Live Earnings Dial Card -->
+<div class="bg-primary p-space-md rounded-xl mb-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-primary-container">Today's Net Liquidity</span>
+<span class="font-code-mono text-code-mono text-secondary-container">+£240 SURGE</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-display-xl text-display-xl text-on-primary font-medium">£1,890.50</span>
+<span class="font-code-mono text-code-mono text-on-primary-container">9 / 11 DROPS</span>
+</div>
+<!-- Inline SVG Sparkline / Progress Ring Indicator -->
+<div class="mt-space-sm flex items-center gap-2">
+<div class="w-full bg-surface-container-highest/20 h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full w-[82%]"></div>
+</div>
+<span class="font-code-mono text-code-mono text-secondary-container">82%</span>
+</div>
+</div>
+<!-- Active Delivery Card with Turn-by-Turn Instruction -->
+<div class="bg-primary p-space-md rounded-xl mb-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code-mono text-code-mono text-secondary-fixed-dim">WAYPOINT ORDER #WZ-9014</span>
+<span class="font-code-mono text-code-mono px-2 py-0.5 bg-secondary-container/20 text-secondary-container rounded font-medium">IN TRANSIT</span>
+</div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container">turn_right</span>
+</div>
+<div>
+<h5 class="font-title-md text-title-md text-on-primary">In 180m, Turn Right</h5>
+<p class="font-body-sm text-body-sm text-on-primary-container">Indiranagar 100ft Road → Gate 3 Entry</p>
+</div>
+</div>
+<!-- Minimalist Operational Route Nodes -->
+<div class="space-y-space-sm pl-2 mb-space-md">
+<div class="flex items-center gap-3 font-body-sm text-body-sm">
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+<span class="text-on-primary-container">Origin: Artisan Cold Roastery</span>
+<span class="ml-auto font-code-mono text-code-mono text-on-primary-container">09:18</span>
+</div>
+<div class="flex items-center gap-3 font-body-sm text-body-sm font-medium">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="text-on-primary">Drop: Prestige Technostar, Tower B</span>
+<span class="ml-auto font-code-mono text-code-mono text-secondary-container">09:44 ETA</span>
+</div>
+</div>
+<!-- Customer PIN Code Verification Box -->
+<div class="p-space-sm rounded bg-primary-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-primary-container text-[18px]">verified</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Customer Handshake:</span>
+</div>
+<div class="flex gap-1.5">
+<span class="w-7 h-8 rounded bg-primary flex items-center justify-center font-code-mono text-code-mono text-on-primary font-bold">5</span>
+<span class="w-7 h-8 rounded bg-primary flex items-center justify-center font-code-mono text-code-mono text-on-primary font-bold">8</span>
+<span class="w-7 h-8 rounded bg-primary flex items-center justify-center font-code-mono text-code-mono text-on-primary font-bold">•</span>
+<span class="w-7 h-8 rounded bg-primary flex items-center justify-center font-code-mono text-code-mono text-on-primary font-bold">•</span>
+</div>
+</div>
+</div>
+<!-- Quick Dispatch Actions -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="py-2.5 rounded-lg bg-surface text-primary font-body-sm text-body-sm font-medium flex items-center justify-center gap-1.5 shadow">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Contact Node</span>
+</button>
+<button class="py-2.5 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-medium flex items-center justify-center gap-1.5 shadow">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+<span>Navigate</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: RESPONSIBLE DELIVERY PROTOCOL (Ethical Standards) -->
+<section class="w-full bg-surface py-space-xl" id="protocol">
+<div class="max-w-[1440px] mx-auto px-margin">
+<!-- Section Title -->
+<div class="max-w-2xl mb-space-xl">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-space-xs">Human-Centric Engineering</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Responsible Delivery Protocol</h2>
+<p class="mt-space-xs font-body-lg text-body-lg text-on-surface-variant">
+          We reject predatory speed quotas that jeopardize rider lives. Wayzo designs routing algorithms that prioritize physiological well-being and civic compliance.
+        </p>
+</div>
+<!-- 3 Ethical Pillars Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Zero Punitive Speed Metrics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our dispatch engine penalizes over-speeding rather than rewarding it. Estimated times of arrival (ETAs) adjust dynamically for monsoon downpours, peak traffic snarls, and active pedestrian crossings.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-2 font-code-mono text-code-mono text-secondary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Guaranteed Dynamic Cushioning</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">safety_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Mandatory Helmet Safety Audits</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            AI-assisted selfie compliance checks verify DOT/ISI certified helmet wear before shift log-on. We subsidize impact-rated helmets and reflective high-visibility jackets for all active partners.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-2 font-code-mono text-code-mono text-secondary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Subsidized Safety Gear</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Exhaustive Trust Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Two-tier background verifications protect both riders and customers. Partners receive verified commercial badges recognized by municipal traffic police and major residential housing societies.
+          </p>
+<div class="mt-space-md pt-space-sm flex items-center gap-2 font-code-mono text-code-mono text-secondary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Municipal Gate Accreditation</span>
+</div>
+</div>
+</div>
+<!-- Partner Community Quote Callout -->
+<div class="mt-space-xl p-space-xl rounded-2xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-1 text-secondary mb-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-title-md text-title-md text-primary font-medium italic">
+            “In 4 years of riding for various delivery apps, Wayzo is the first platform where daily earnings match the dashboard to the rupee, and customer tips aren’t silently withheld.”
+          </p>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">
+            — Rameshwar Gowda, South Bengaluru Fleet Leader • 4,120 Completed Dispatches
+          </span>
+</div>
+<a class="shrink-0 bg-primary text-on-primary px-8 py-3 rounded-full font-body-md text-body-md hover:bg-surface-container-highest/80 transition-all" href="#onboarding">
+          Join Rameshwar's Fleet
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 6: IN-PERSON HUBS & CITY LOGISTICS ANCHOR -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+<div>
+<span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-widest block mb-space-xs">Physical Fleet Sanctuaries</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight mb-space-md">
+            Wayzo Partner Lounges: Rest, recharge, and connect.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-space-lg">
+            Delivery partners are the physical backbone of our cities. Wayzo operates 24/7 air-conditioned physical hub stations in high-density corridors featuring free high-speed EV charging, clean rest facilities, high-speed Wi-Fi, and cold mineral water.
+          </p>
+<div class="grid grid-cols-2 gap-gutter font-code-mono text-code-mono text-on-primary-container">
+<div class="p-space-md bg-primary-container rounded-lg">
+<span class="text-secondary-fixed-dim font-medium text-title-md block mb-1">42 HUBS</span>
+<span class="font-body-sm text-body-sm">Active in NCR, Mumbai &amp; BLR</span>
+</div>
+<div class="p-space-md bg-primary-container rounded-lg">
+<span class="text-secondary-fixed-dim font-medium text-title-md block mb-1">FREE EV SWAP</span>
+<span class="font-body-sm text-body-sm">Subsidized battery modules</span>
+</div>
+</div>
+</div>
+<!-- Ambient Photo of Modern Partner Lounge -->
+<div class="relative w-full h-[360px] md:h-[420px] rounded-xl overflow-hidden shadow-2xl bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Modern architectural rest lounge interior designed for electric motorcycle delivery riders. Warm indirect timber accents, comfortable minimalist ergonomic benches, charging stations for phones and EV batteries, with riders calmly checking schedules in a clean, dignified space bathed in natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7gRwEuwyUh11aRHvpvlK6f8nbSUqNGy3Cyx2AmGLJRksbBflDu9U1naEJ4g0PSxvlASM2PzK0PWW8PV1BpD-_kaUeieNNyhJ_1dVw9GvlE98VdDgr8x3A4xCR1ijNcbCK2TtbLgNr_XmmvJdYThjR9L9eOPBhQ1SblnBvtuUKUa5JwORkZnVI4tMWTER74qPGfkrUg3mVGRkxAaFXOh5uhkvJ9wli6SpHCDGjHCs"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary/90 backdrop-blur-md p-space-sm rounded-lg flex items-center justify-between font-code-mono text-code-mono">
+<span class="text-secondary-fixed-dim">KORAMANGALA FLEET HUB #04</span>
+<span class="text-on-primary-container">OPEN 24/7 • WATER &amp; EV POWER</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FINAL ADMISSIONS CTA MONOLITH -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin text-center">
+<div class="max-w-2xl mx-auto space-y-space-md">
+<span class="font-code-mono text-code-mono text-secondary font-medium tracking-wider uppercase">[ ADMISSIONS ACTIVE • IMMEDIATE ONBOARDING ]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Ready to operate on your own terms?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Download the partner application or verify your commercial documents in under 15 minutes.
+        </p>
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-center gap-space-md">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-primary text-on-primary px-8 py-3.5 rounded-full font-title-md text-title-md hover:bg-surface-container-highest transition-all shadow-md" href="#">
+            Download Partner APK
+          </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-surface-container-lowest text-primary px-8 py-3.5 rounded-full font-title-md text-title-md hover:bg-surface-container-high transition-all shadow-sm" href="#">
+            Visit Nearest Hub
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-container-high pt-space-xl pb-margin"><div class="max-w-[1440px] mx-auto px-margin"><div class="flex flex-col lg:flex-row justify-between items-start gap-space-xl pb-space-xl border-b border-surface-container-high"><div class="space-y-space-md max-w-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary lowercase tracking-tight">wayzo</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary ml-1"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Autonomous architectural orchestration for precision hyper-local physical commerce. Micro-meter waypoint accuracy.</p><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface border border-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-mono text-code-mono text-on-surface-variant tracking-wider uppercase">[ STATUS: OPERATIONAL • P99 120MS ]</span></div></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-gutter w-full lg:w-auto"><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Platform</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Dispatch Engine</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Spatial Mesh</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Telemetry API</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Micro-Hubs</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Merchants</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Enterprise POS</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Cold Chain</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">SLA Guarantee</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Developer Kit</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Partners</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Fleet Console</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Node Operators</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Hardware Spec</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Incentives</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Company</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Manifesto</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Research Labs</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Careers</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Security Protocol</li></ul></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-code-mono text-code-mono text-on-surface-variant"><div class="flex items-center gap-space-xs"><span>© 2025 WAYZO INFRASTRUCTURE TECHNOLOGIES.</span></div><div class="flex items-center gap-space-sm tracking-tight"><span>ACTIVE NODES:</span><span class="text-on-surface font-medium">BENGALURU • MUMBAI • DELHI NCR</span></div></div></div></footer></body></html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f9f9f7;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e8e8e6", "on-tertiary-fixed-variant": "#464747", "on-primary-fixed-variant": "#474646", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "tertiary-container": "#1b1c1c", "surface-container-lowest": "#ffffff", "surface": "#f9f9f7", "error": "#ba1a1a", "on-secondary-fixed-variant": "#73360b", "on-secondary-fixed": "#331200", "surface-container": "#eeeeec", "on-error": "#ffffff", "primary-fixed-dim": "#c8c6c5", "on-tertiary-container": "#848484", "on-error-container": "#93000a", "primary-container": "#1c1b1b", "primary": "#000000", "inverse-surface": "#2f3130", "surface-container-highest": "#e2e3e1", "secondary-fixed-dim": "#ffb68e", "secondary-container": "#ffa673", "surface-variant": "#e2e3e1", "background": "#f9f9f7", "surface-dim": "#dadad8", "inverse-on-surface": "#f1f1ef", "inverse-primary": "#c8c6c5", "primary-fixed": "#e5e2e1", "on-secondary-container": "#783a0f", "on-primary-container": "#858383", "surface-tint": "#5f5e5e", "outline": "#747878", "on-background": "#1a1c1b", "outline-variant": "#c4c7c7", "tertiary-fixed": "#e3e2e2", "on-surface": "#1a1c1b", "on-surface-variant": "#444748", "on-primary": "#ffffff", "surface-container-low": "#f4f4f2", "surface-bright": "#f9f9f7", "on-tertiary-fixed": "#1b1c1c", "tertiary": "#000000", "secondary-fixed": "#ffdbc9", "error-container": "#ffdad6", "on-primary-fixed": "#1c1b1b", "tertiary-fixed-dim": "#c7c6c6", "secondary": "#904c21" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "margin": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem" }, "fontFamily": { "code-mono": ["JetBrains Mono"], "headline-sm": ["Geist"], "label-caps": ["Geist"], "display-xl-mobile": ["Geist"], "body-md": ["Geist"], "headline-lg-mobile": ["Geist"], "headline-md": ["Geist"], "display-xl": ["Geist"], "body-lg": ["Geist"], "title-md": ["Geist"], "body-sm": ["Geist"], "headline-lg": ["Geist"] }, "fontSize": { "code-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "display-xl-mobile": ["38px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary selection:text-on-secondary"><main class="flex-1 flex flex-col relative w-full pt-safe pb-safe bg-surface px-space-md"><div class="flex flex-col w-full pb-space-lg select-none">
+<!-- Top Navigation & Live Telemetry Badge -->
+<div class="flex items-center justify-between py-space-sm">
+<div class="flex items-center space-x-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">wayzo</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block mb-1"></span>
+</div>
+<!-- Dynamic Pulse Status Pill -->
+<div class="flex items-center space-x-1.5 px-2.5 py-1 bg-surface-container rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">BLR · Active Grid</span>
+</div>
+</div>
+<!-- Editorial Headline Section -->
+<div class="mt-space-lg mb-space-md">
+<span class="font-code-mono text-code-mono uppercase text-secondary font-medium tracking-wider mb-2 block">
+      Hyperlocal Logistics Protocol
+    </span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight leading-none mb-3">
+      Move anything.<br/>Across your city.
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
+      Local deliveries, connected through an autonomous network of verified nearby partners.
+    </p>
+</div>
+<!-- Interactive Visual Centerpiece -->
+<div class="relative w-full rounded-lg overflow-hidden bg-surface-container-low shadow-sm my-space-sm group">
+<!-- Visual Image with Scrim -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="Wayzo Courier partner in Bengaluru" class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Editorial black and white portrait of a confident young South Asian motorcycle courier resting against a matte finished electric motorcycle at twilight in modern Bengaluru. Architectural glass facades reflecting soft street lamps, mist and clean geometric framing, shot on 35mm film aesthetic with sharp contrast, obsidian blacks and bone white highlights, documentary street style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ONfgA0pknJu4kFMphHgcM1Kjpco1iFUES4_JcQBWFk-0UL2_FCrMhP83eDvSzbo9QN-9Se6LbdbBf-V0_hBirxe7mxFgrdFUfCfuSRkP5BdXRCuqmduuEUZiGFWWg4D4L8rl6BrSsDdLVV__Fj2nZAwKBTmy1M-O7tp__TJYdyZ0jtrKA80gMBv6iND8_AqsKmU_WAeb1b3SSb5wsyKDYkqn1GvYXGrLD3BoWM8"/>
+<!-- Gradient Overlay for Legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<!-- Telemetry Overlay Anchors -->
+<div class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2 py-1 rounded">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">near_me</span>
+<span class="font-code-mono text-code-mono text-on-surface">12.9716° N, 77.5946° E</span>
+</div>
+</div>
+<div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-2 py-1 rounded">
+<span class="font-code-mono text-code-mono text-on-surface">LATENCY 18ms</span>
+</div>
+<!-- Bottom Card Metadata Tag -->
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-secondary">
+<div>
+<p class="font-code-mono text-code-mono text-primary-fixed-dim uppercase tracking-wider text-[10px]">Fleet Node Verified</p>
+<p class="font-headline-sm text-headline-sm text-surface-bright leading-snug">Bengaluru Central Hub</p>
+</div>
+<div class="bg-primary/60 p-2 rounded backdrop-blur-sm">
+<span class="material-symbols-outlined text-surface-bright text-lg">electric_moped</span>
+</div>
+</div>
+</div>
+<!-- Micro-stat Bar -->
+<div class="p-space-sm bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">942 Active Couriers</span>
+</div>
+<div class="flex items-center space-x-1">
+<span class="font-code-mono text-code-mono text-on-surface-variant font-medium">AVG DISPATCH</span>
+<span class="font-code-mono text-code-mono text-primary font-bold">4.2 MIN</span>
+</div>
+</div>
+</div>
+<!-- Interactive Delight Pill: Touch to Preview Route -->
+<div class="flex items-center justify-between px-3 py-2 my-space-xs bg-surface-container rounded cursor-pointer active:scale-[0.99] transition-all" id="pulse-ticker" onclick="toggleTicker()">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-base">swap_calls</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="ticker-msg">Indiranagar ➔ Koramangala dispatch ready</span>
+</div>
+<span class="font-code-mono text-code-mono text-on-surface-variant text-[11px] underline">Inspect</span>
+</div>
+<!-- Bottom Conversion Group -->
+<div class="mt-space-md flex flex-col space-y-3">
+<button class="w-full h-12 bg-primary text-on-primary rounded font-title-md text-title-md flex items-center justify-center space-x-2 hover:bg-neutral-800 active:scale-[0.98] transition-all shadow-sm group" id="get-started-btn">
+<span>Get Started</span>
+<span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="text-center pt-1">
+<button class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors py-1">
+        Already have an account? <span class="text-primary font-medium underline underline-offset-4">Sign in</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let tickerState = 0;
+  const tickerMessages = [
+    "Indiranagar ➔ Koramangala dispatch ready",
+    "Lavelle Road ➔ Whitefield corridor clear",
+    "Average cross-city transit: 28 mins"
+  ];
+
+  function toggleTicker() {
+    tickerState = (tickerState + 1) % tickerMessages.length;
+    const msgElement = document.getElementById("ticker-msg");
+    if (msgElement) {
+      msgElement.style.opacity = "0";
+      setTimeout(() => {
+        msgElement.innerText = tickerMessages[tickerState];
+        msgElement.style.opacity = "1";
+      }, 150);
+    }
+  }
+
+  // Subtle tap-delight response
+  const btn = document.getElementById('get-started-btn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      btn.classList.add('bg-secondary');
+      setTimeout(() => {
+        btn.classList.remove('bg-secondary');
+      }, 400);
+    });
+  }
+</script></main></body></html>

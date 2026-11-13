@@ -1,0 +1,30 @@
+export const APP_CONFIG = {
+  name: 'wayzzo',
+  legalName: 'wayzzo Technologies Pvt. Ltd.',
+  tagline: 'A smarter way to move things around your city.',
+  supportEmail: 'lokhande.lokeek@gmail.com',
+  contactEmail: 'lokhande.lokeek@gmail.com',
+  headquarters: 'Ravet, Pune, Maharashtra, India',
+  phone: '+91 7558527810',
+  website: 'https://wayzzo.delivery',
+  currency: 'INR',
+  currencySymbol: '₹',
+  fare: {
+    baseFare: 40,
+    baseDistanceKm: 2,
+    perKmRate: 14,
+    freeWeightKg: 5,
+    perKgRate: 8,
+    minimumFare: 40,
+  },
+  operatingCities: [
+    'Pune',
+  ],
+  serviceCategories: [
+    { id: 'documents', name: 'Documents & Keys', maxWeightKg: 2 },
+    { id: 'parcels', name: 'Everyday Parcels', maxWeightKg: 10 },
+    { id: 'food', name: 'Food & Bakery', maxWeightKg: 8 },
+    { id: 'pharmacy', name: 'Medicines & Health', maxWeightKg: 5 },
+    { id: 'retail', name: 'Retail & Commercial', maxWeightKg: 20 },
+  ],
+} as const;

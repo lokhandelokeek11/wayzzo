@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>wayzo — Hyperlocal Precision Logistics</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#000000", "tertiary-fixed": "#e3e2e2", "on-tertiary": "#ffffff", "inverse-surface": "#2f3130", "surface": "#f9f9f7", "on-secondary-fixed-variant": "#73360b", "on-primary-fixed-variant": "#474646", "surface-tint": "#5f5e5e", "on-tertiary-container": "#848484", "on-secondary-fixed": "#331200", "tertiary-container": "#1b1c1c", "on-error-container": "#93000a", "primary-container": "#1c1b1b", "primary-fixed": "#e5e2e1", "secondary-container": "#ffa673", "error-container": "#ffdad6", "surface-bright": "#f9f9f7", "on-surface-variant": "#444748", "surface-container-high": "#e8e8e6", "surface-container-low": "#f4f4f2", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#ffb68e", "surface-variant": "#e2e3e1", "surface-container-highest": "#e2e3e1", "on-background": "#1a1c1b", "on-primary-fixed": "#1c1b1b", "secondary-fixed": "#ffdbc9", "on-tertiary-fixed-variant": "#464747", "background": "#f9f9f7", "on-surface": "#1a1c1b", "surface-dim": "#dadad8", "inverse-primary": "#c8c6c5", "on-secondary-container": "#783a0f", "outline-variant": "#c4c7c7", "tertiary-fixed-dim": "#c7c6c6", "surface-container-lowest": "#ffffff", "outline": "#747878", "tertiary": "#000000", "on-error": "#ffffff", "secondary": "#904c21", "error": "#ba1a1a", "on-primary-container": "#858383", "surface-container": "#eeeeec", "on-tertiary-fixed": "#1b1c1c", "on-secondary": "#ffffff", "inverse-on-surface": "#f1f1ef", "on-primary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-lg": "1.5rem", "margin": "2rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem" }, fontFamily: { "headline-lg": ["Geist"], "display-xl-mobile": ["Geist"], "display-xl": ["Geist"], "body-sm": ["Geist"], "headline-sm": ["Geist"], "label-caps": ["Geist"], "title-md": ["Geist"], "body-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "body-md": ["Geist"], "code-mono": ["JetBrains Mono"], "headline-md": ["Geist"] }, fontSize: { "headline-lg": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-xl-mobile": ["38px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-xl": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "code-mono": ["12px", { "lineHeight": "16px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-container-high transition-all"><div class="h-16 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="wayzo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDj1x3nxABPWwMfgslea218RYFeLGjH04e2ige4WzuKfzmW9rbYxZ6CxoLYpngpnwpyB7GUxVoVwD5MDVo_SrP8jAPP0RL0kjlf807tYNgJoJ9ojUQxRVgSH89BZUYkBJYpGCL49lkxWD4mTVO3FSc3Dzwq_Ssy-4LtGpD-cRRKFihppW38PhtiuZvGrwCdrcvHGXM7RMV_8XhLB2WWH3j_1O4KVvvPcfLJtne3_RPz"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-medium lowercase">wayzo</span></div><nav class="hidden md:flex items-center p-1 rounded-full bg-surface-container-low border border-surface-container-high gap-1" data-active-classes="bg-primary text-on-primary font-medium"><a aria-current="page" class="px-space-md py-1.5 rounded-full transition-colors bg-primary text-on-primary font-medium" data-path="platform" href="#">Platform</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="merchants" href="#">Merchants</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="partners" href="#">Partners</a><a class="px-space-md py-1.5 rounded-full font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="ecosystem" href="#">Ecosystem</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-surface-container-highest font-body-sm text-body-sm text-on-surface hover:border-primary transition-all" data-path="get-started" href="#">Get Started</a><a class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-primary text-on-primary font-body-sm text-body-sm hover:bg-on-surface-variant transition-colors" data-path="partner-login" href="#">Partner Login</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface flex-grow"><div class="flex flex-col w-full selection:bg-primary selection:text-on-primary">
+<!-- SECTION 1: THE MONOLITH HERO -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin pt-space-xl pb-16 flex flex-col items-center">
+<!-- Top Geographic Telemetry Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low shadow-sm mb-8">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-code-mono text-code-mono tracking-widest text-on-surface-variant uppercase">[ BENGALURU • MUMBAI • DELHI NCR ]</span>
+</div>
+<!-- Monumental Centered Headline -->
+<h1 class="font-display-xl text-display-xl text-center text-primary max-w-4xl tracking-tighter mb-6 leading-none">
+      Your city. Your delivery network.
+    </h1>
+<!-- Editorial Subtext -->
+<p class="font-body-lg text-body-lg text-on-surface-variant text-center max-w-xl mb-10 leading-relaxed font-normal">
+      A precision hyperlocal transit layer engineered for instant local commerce, verified partners, and urban speed.
+    </p>
+<!-- Centered Minimal Obsidian Pill CTA -->
+<div class="flex items-center justify-center gap-space-md mb-14">
+<a class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-on-primary font-body-md text-body-md hover:bg-inverse-surface transition-all shadow-md group" href="#ecosystem">
+<span>Explore the Network</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-6 py-3 rounded-full bg-surface-container-low text-primary font-body-md text-body-md hover:bg-surface-container-high transition-all" href="#telemetry">
+<span class="font-code-mono text-code-mono text-[11px] uppercase tracking-wider text-on-surface-variant">Live Mesh</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</a>
+</div>
+<!-- Hero Centerpiece Visual Anchor: High-Contrast Monolith Viewport -->
+<div class="w-full relative rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
+<div class="w-full h-[480px] lg:h-[580px] bg-cover bg-center relative flex flex-col justify-between p-6 lg:p-10" data-alt="Cinematic architectural dusk street view in Bengaluru with asphalt roadway reflections, glowing amber streetlights, and a sharp obsidian silhouette of a motorcycle delivery courier navigating high-speed arterial corridors in dramatic high-contrast film aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsUOWB6JTBh-N6b6vMHefXAsaNQ_KknVWzomGGHdMFWFdA_DjlVIsdlZk4Z-W78adEuXxTsTS7sfXIqoCF3nk1weEjfSaVXsuxvfWlmK3VsLwinf8dKnw4dwYKNF5-mE6GTSIRGXKx25QiCuJxZPQZqxUYNBpVQC-hVotNxudUO6Rf4OkXyGG94CNsOTeIYSfa20lWLIrCsjkDmWRaCVx6XR3UBVrmsj1yZX8rHBM')">
+<!-- Atmospheric Vignette Layer -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/30 to-primary/40 pointer-events-none"></div>
+<!-- Telemetry Layer Top -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3 px-3 py-1.5 rounded bg-surface/90 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-code-mono text-code-mono text-primary uppercase font-medium tracking-wider">[ 12.9716° N, 77.5946° E • NODE_BLR_01 ]</span>
+</div>
+<div class="flex items-center gap-4 bg-primary/70 backdrop-blur-md px-3.5 py-1.5 rounded text-on-primary">
+<span class="font-code-mono text-code-mono text-tertiary-fixed">LATENCY: P99 120ms</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-code-mono text-code-mono text-secondary-container">ALGO v4.8</span>
+</div>
+</div>
+<!-- Telemetry Layer Bottom: Mesh Metrics Card -->
+<div class="relative z-10 flex flex-col md:flex-row items-end md:items-center justify-between gap-6 pt-8">
+<div class="space-y-1">
+<span class="font-code-mono text-label-caps uppercase tracking-widest text-tertiary-fixed-dim">HYPERLOCAL ACTIVE CAPACITY</span>
+<div class="flex items-baseline gap-3">
+<span class="font-headline-lg text-headline-lg text-on-primary tracking-tight font-medium">1,420</span>
+<span class="font-code-mono text-code-mono text-secondary-container">ACTIVE COURIERS IN RADIUS</span>
+</div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest/95 backdrop-blur-md px-5 py-3 rounded-lg shadow-lg">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-primary font-medium">Koramangala 4th Block</p>
+<p class="font-code-mono text-code-mono text-on-surface-variant">Allocating node to route in 4.1s</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: BRAND STATEMENT (Deliberate Editorial Breathing Room) -->
+<section class="w-full bg-surface-container-lowest py-28 lg:py-36">
+<div class="max-w-[1040px] mx-auto px-margin text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] mb-6">Manifesto &amp; Cadence</span>
+<h2 class="font-headline-lg text-headline-lg lg:text-[48px] lg:leading-[54px] text-primary tracking-tight font-normal mb-8 max-w-3xl">
+        “Moving more than parcels. Orchestrating urban velocity.”
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed font-normal">
+        By structuring urban geography into millisecond dispatch cells, wayzo converts physical transport into predictable software infrastructure. Decentralized routing ensures riders retain dignity and merchants control their speed.
+      </p>
+<!-- Micro Sparkline Divider Graphic -->
+<div class="mt-12 flex items-center gap-6 opacity-60">
+<span class="font-code-mono text-code-mono text-[10px] text-on-surface-variant">00:00:01</span>
+<svg class="w-32 h-6 text-primary" fill="none" viewbox="0 0 128 24">
+<path d="M0 12H30L38 4L46 20L56 8L64 16L72 12H128" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"></path>
+</svg>
+<span class="font-code-mono text-code-mono text-[10px] text-on-surface-variant">SUB-SECOND SYNC</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: THE THREE-PART ECOSYSTEM (Editorial Asymmetric Stack) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-20 flex flex-col gap-16" id="ecosystem">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest block mb-2">Ecosystem Architecture</span>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight">Structured for high-density metropolitan flux.</h3>
+</div>
+<p class="font-code-mono text-code-mono text-on-surface-variant">NODE TIERS: P2P • B2B • FLEET</p>
+</div>
+<!-- Stacked Rows with Flat Shaded Surface Separation -->
+<div class="flex flex-col gap-6">
+<!-- ROW 01: INDIVIDUALS -->
+<div class="bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-sm transition-all hover:shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-1">
+<span class="font-code-mono text-headline-sm text-secondary font-medium">01</span>
+</div>
+<div class="lg:col-span-5 space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-surface-container font-code-mono text-label-caps uppercase text-on-surface-variant">
+<span>INDIVIDUAL DISPATCH</span>
+<span class="text-secondary">•</span>
+<span>POINT-TO-POINT</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary tracking-tight">
+              “Send what matters. Instant pickup, zero friction.”
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Forgotten keys, urgent prototypes, confidential files. Hand-to-hand transit executed within verified radial chains without central sorting hub delay.
+            </p>
+</div>
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">AVERAGE PICKUP</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">6.2 min</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Doorstep handover verified via NFC &amp; PIN mesh.</p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">TRANSIT ACCURACY</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">99.94%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Direct route calculation omitting batch hubs.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 02: LOCAL MERCHANTS -->
+<div class="bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-sm transition-all hover:shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-1">
+<span class="font-code-mono text-headline-sm text-secondary font-medium">02</span>
+</div>
+<div class="lg:col-span-5 space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-surface-container font-code-mono text-label-caps uppercase text-on-surface-variant">
+<span>LOCAL COMMERCE</span>
+<span class="text-secondary">•</span>
+<span>API INTEGRATED</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary tracking-tight">
+              “Fleet-grade delivery infrastructure without fleet overhead.”
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Integrate enterprise POS or Shopify backends. Convert your neighborhood walk-in store into a 15-minute fulfillment perimeter without leasing two-wheelers.
+            </p>
+</div>
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">DISPATCH RADIUS</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">&lt; 15 min</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Guaranteed hyper-local customer fulfillment.</p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">CATALOG SYNC</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">REST / POS</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Zero technical setup: Webhooks &amp; automated orders.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ROW 03: PARTNERS -->
+<div class="bg-surface-container-lowest rounded-xl p-8 lg:p-12 shadow-sm transition-all hover:shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-1">
+<span class="font-code-mono text-headline-sm text-secondary font-medium">03</span>
+</div>
+<div class="lg:col-span-5 space-y-3">
+<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded bg-surface-container font-code-mono text-label-caps uppercase text-on-surface-variant">
+<span>FLEET &amp; RIDERS</span>
+<span class="text-secondary">•</span>
+<span>DIRECT UPI</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary tracking-tight">
+              “Your vehicle. Your autonomy. Real-time earnings.”
+            </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              No locked schedules or opaque algorithms. Run on your own terms with instantaneous per-delivery settlement credited straight to bank accounts.
+            </p>
+</div>
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">SETTLEMENT SPEED</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">00.0s</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Real-time instant payout upon completion.</p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<span class="font-code-mono text-code-mono text-on-surface-variant block mb-1">COVERAGE INCENTIVE</span>
+<span class="font-headline-md text-headline-md text-primary font-medium tracking-tight">1.8x</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Dynamic surge directly distributed to courier.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: LIVE DISPATCH ENGINE (Groww-Style Telemetry Strip) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-16" id="telemetry">
+<div class="bg-surface-container rounded-2xl p-8 lg:p-12 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 pb-6 border-b border-surface-container-highest">
+<div>
+<span class="font-code-mono text-label-caps text-secondary uppercase tracking-widest font-semibold block mb-1">REAL-TIME ENGINE TELEMETRY</span>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight">Autonomous Routing Core</h3>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-code-mono text-code-mono shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>NODE_CORE_ONLINE</span>
+</div>
+<span class="font-code-mono text-code-mono text-on-surface-variant">TICK: 250ms</span>
+</div>
+</div>
+<!-- Telemetry Metric Quad Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<span class="font-code-mono text-label-caps text-on-surface-variant uppercase">ALLOCATION LATENCY</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">&lt; 4.2</span>
+<span class="font-code-mono text-body-sm text-on-surface-variant">mins</span>
+</div>
+<span class="font-code-mono text-code-mono text-secondary mt-1 block">Average partner pickup match</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<span class="font-code-mono text-label-caps text-on-surface-variant uppercase">ROUTING MATCH RATE</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">99.8%</span>
+</div>
+<span class="font-code-mono text-code-mono text-on-surface-variant mt-1 block">Sub-meter parcel handoff success</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<span class="font-code-mono text-label-caps text-on-surface-variant uppercase">CURRENT ACTIVE MESH</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">18,940</span>
+</div>
+<span class="font-code-mono text-code-mono text-on-surface-variant mt-1 block">Waypoints processed today</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<span class="font-code-mono text-label-caps text-on-surface-variant uppercase">SYSTEM UPTIME (30D)</span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">99.99%</span>
+</div>
+<span class="font-code-mono text-code-mono text-on-surface-variant mt-1 block">Redundant mesh architecture</span>
+</div>
+</div>
+<!-- Live Terminal Simulation Preview -->
+<div class="bg-primary text-on-primary rounded-xl p-6 font-code-mono text-code-mono shadow-inner overflow-x-auto">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high/20 mb-4 text-tertiary-fixed-dim">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>WAYZO_KERNEL :: ROUTE_MONITOR_DAEMON</span>
+</div>
+<span class="text-[11px]">STREAM ACTIVE</span>
+</div>
+<div class="space-y-2 text-[12px] leading-relaxed" id="live-stream-log">
+<div class="flex items-center gap-4 text-tertiary-fixed">
+<span class="text-tertiary-fixed-dim">[14:32:01.048]</span>
+<span class="text-secondary font-medium">REQ_DISPATCH</span>
+<span>LOC: 12.9352, 77.6245 (Indiranagar) -&gt; COURIER_MATCH #8821 in 2.1s</span>
+</div>
+<div class="flex items-center gap-4 text-tertiary-fixed">
+<span class="text-tertiary-fixed-dim">[14:32:02.112]</span>
+<span class="text-on-tertiary-container font-medium">B2B_SYNC</span>
+<span>MERCHANT_ID: 90214_POS -&gt; ORDER #99201 READY FOR PICKUP</span>
+</div>
+<div class="flex items-center gap-4 text-tertiary-fixed">
+<span class="text-tertiary-fixed-dim">[14:32:03.490]</span>
+<span class="text-secondary font-medium">UPI_SETTLEMENT</span>
+<span>ROUTE_4821 COMPLETED -&gt; ₹142.00 DISBURSED INSTANTLY TO VPA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CINEMATIC DARK FINALE & CTA (CRED-Inspired) -->
+<section class="w-full bg-primary text-on-primary py-28 lg:py-36 relative overflow-hidden">
+<div class="max-w-[1040px] mx-auto px-margin text-center relative z-10 flex flex-col items-center">
+<!-- Minimal Live Indicator -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/10 text-on-primary font-code-mono text-label-caps uppercase tracking-wider mb-8">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>JOIN 14,000+ COURIERS AND BUSINESSES</span>
+</div>
+<!-- Monolithic Finale Headline -->
+<h2 class="font-display-xl text-display-xl lg:text-[68px] lg:leading-[74px] text-on-primary tracking-tight font-medium mb-8 max-w-3xl">
+        Let's move your city forward.
+      </h2>
+<p class="font-body-lg text-body-lg text-tertiary-fixed-dim max-w-lg mb-12 font-normal leading-relaxed">
+        Whether you are expanding retail storefront reach or powering your personal schedule, wayzo is the open urban network.
+      </p>
+<!-- Primary Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-surface text-primary font-body-md text-body-md hover:bg-surface-bright transition-all shadow-lg font-medium text-center" href="#">
+          Partner with wayzo
+        </a>
+<a class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-surface-container-high/10 text-on-primary font-body-md text-body-md hover:bg-surface-container-high/20 transition-all font-medium text-center" href="#">
+          Business API Access
+        </a>
+</div>
+<!-- Secondary Metrics Bar in Dark Frame -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-20 pt-12 border-t border-surface-container-high/20 w-full max-w-2xl text-left">
+<div>
+<span class="font-code-mono text-label-caps text-tertiary-fixed-dim uppercase">METRO HUBS</span>
+<p class="font-headline-sm text-headline-sm text-on-primary mt-1">3 Active</p>
+</div>
+<div>
+<span class="font-code-mono text-label-caps text-tertiary-fixed-dim uppercase">AVERAGE RATING</span>
+<p class="font-headline-sm text-headline-sm text-on-primary mt-1">4.92 / 5.0</p>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<span class="font-code-mono text-label-caps text-tertiary-fixed-dim uppercase">DISPATCH PROTOCOL</span>
+<p class="font-headline-sm text-headline-sm text-on-primary mt-1">v4.8 Zero-Wait</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Terminal Simulation Script -->
+<script>
+    (function() {
+      const logs = [
+        { time: "[14:32:05.102]", tag: "DISPATCH_OPT", color: "text-secondary", text: "NODE_MUM_04 REBALANCED • FLEET CLUSTER +14%" },
+        { time: "[14:32:06.883]", tag: "POS_CATALOG", color: "text-on-tertiary-container", text: "STORE_DELHI_88 SKU SYNC • 42 ITEMS MAPPED" },
+        { time: "[14:32:08.012]", tag: "SUB_SECOND", color: "text-secondary", text: "ROUTE #9041 ALLOCATED IN 1.8s • CORRIDOR_CLEAR" },
+        { time: "[14:32:09.431]", tag: "NODE_ALERT", color: "text-tertiary-fixed", text: "KORAMANGALA HUB CAPACITY BALANCED AT 92%" }
+      ];
+      
+      const logContainer = document.getElementById("live-stream-log");
+      if (!logContainer) return;
+      
+      let index = 0;
+      setInterval(() => {
+        const item = logs[index % logs.length];
+        const row = document.createElement("div");
+        row.className = "flex items-center gap-4 text-tertiary-fixed animate-fadeIn";
+        row.innerHTML = `
+          <span class="text-tertiary-fixed-dim">${item.time}</span>
+          <span class="${item.color} font-medium">${item.tag}</span>
+          <span>${item.text}</span>
+        `;
+        
+        logContainer.appendChild(row);
+        if (logContainer.children.length > 5) {
+          logContainer.removeChild(logContainer.firstElementChild);
+        }
+        index++;
+      }, 3500);
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-container-high pt-space-xl pb-margin"><div class="max-w-[1440px] mx-auto px-margin"><div class="flex flex-col lg:flex-row justify-between items-start gap-space-xl pb-space-xl border-b border-surface-container-high"><div class="space-y-space-md max-w-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary lowercase tracking-tight">wayzo</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary ml-1"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Autonomous architectural orchestration for precision hyper-local physical commerce. Micro-meter waypoint accuracy.</p><div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface border border-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-mono text-code-mono text-on-surface-variant tracking-wider uppercase">[ STATUS: OPERATIONAL • P99 120MS ]</span></div></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-gutter w-full lg:w-auto"><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Platform</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Dispatch Engine</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Spatial Mesh</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Telemetry API</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Micro-Hubs</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Merchants</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Enterprise POS</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Cold Chain</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">SLA Guarantee</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Developer Kit</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Partners</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Fleet Console</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Node Operators</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Hardware Spec</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Incentives</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Company</h4><ul class="space-y-2 font-body-sm text-body-sm"><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Manifesto</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Research Labs</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Careers</li><li class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer">Security Protocol</li></ul></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-code-mono text-code-mono text-on-surface-variant"><div class="flex items-center gap-space-xs"><span>© 2025 WAYZO INFRASTRUCTURE TECHNOLOGIES.</span></div><div class="flex items-center gap-space-sm tracking-tight"><span>ACTIVE NODES:</span><span class="text-on-surface font-medium">BENGALURU • MUMBAI • DELHI NCR</span></div></div></div></footer></body></html>

@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "WAYZZO",
+    "slug": "wayzzo-customer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "wayzzo",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111111"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.wayzzo.customer",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Wayzzo requires your location to set accurate pickup and delivery points, estimate fares, and track deliveries in real time."
+      }
+    },
+    "android": {
+      "package": "com.wayzzo.customer",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#111111"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Wayzzo requires your location to set accurate pickup and delivery points, estimate fares, and track deliveries in real time."
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow Wayzzo to use biometric authentication for secure access."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "placeholder-movexa-wayzzo-customer"
+      }
+    }
+  }
+}

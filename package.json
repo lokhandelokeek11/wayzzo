@@ -1,0 +1,39 @@
+{
+  "name": "wayzo-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hyperlocal logistics and on-demand delivery startup monorepo",
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "dev:website": "turbo run dev --filter=@delivery/business-website",
+    "dev:merchant": "turbo run dev --filter=@delivery/merchant-portal",
+    "dev:admin": "turbo run dev --filter=@delivery/super-admin-portal",
+    "dev:customer": "turbo run dev --filter=@delivery/customer-app",
+    "dev:partner": "turbo run dev --filter=@delivery/partner-app",
+    "build:website": "turbo run build --filter=@delivery/business-website",
+    "build:merchant": "turbo run build --filter=@delivery/merchant-portal",
+    "build:admin": "turbo run build --filter=@delivery/super-admin-portal"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "react": "18 || 19",
+        "react-dom": "18 || 19",
+        "@types/react": "18 || 19"
+      },
+      "ignoreMissing": ["@babel/core", "babel-jest"]
+    }
+  }
+}
