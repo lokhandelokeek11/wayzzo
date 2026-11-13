@@ -55,9 +55,9 @@ export default function FaqPage() {
       <Navbar />
 
       <main className="flex-1 pt-16">
-        <section className="relative w-full pt-12 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center border-b border-surface-container-high">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-surface-container-high mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
+        <section className="relative w-full pt-12 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center border-b border-white/60">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
             <span className="font-mono text-xs text-on-surface-variant uppercase tracking-widest font-semibold">
               [ HELP &amp; ANSWERS ]
             </span>
@@ -70,11 +70,11 @@ export default function FaqPage() {
           </p>
         </section>
 
-        <section className="py-16 sm:py-20 bg-surface-container-lowest">
+        <section className="py-16 sm:py-20 bg-white/20 backdrop-blur-md">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Accordion items={faqs} />
 
-            <div className="mt-14 p-8 rounded-2xl bg-surface border border-surface-container-high text-center space-y-3">
+            <div className="mt-14 p-8 rounded-3xl glass-panel text-center space-y-3">
               <h3 className="font-medium text-primary text-base font-sans">Still have questions?</h3>
               <p className="text-xs text-on-surface-variant max-w-md mx-auto">
                 Our support team is always happy to help you with any questions about bookings, shop integrations, or rider onboarding.
@@ -82,7 +82,7 @@ export default function FaqPage() {
               <div className="pt-2">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface transition-colors shadow-md"
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
                   <span>Contact Our Team</span>

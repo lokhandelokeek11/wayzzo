@@ -14,20 +14,22 @@ export default function PrivacyPolicyPage() {
     <div className="flex flex-col min-h-screen bg-surface">
       <Navbar />
 
-      <main className="flex-1 py-16 bg-surface-container-low pt-24">
+      <main className="flex-1 py-16 bg-transparent pt-24">
         <div className="max-w-4xl mx-auto px-6 sm:px-8">
           
-          <div className="mb-8 p-4 rounded-xl bg-surface-container-lowest border border-surface-container-high flex items-start gap-3 text-xs text-on-surface">
+          <div className="mb-8 p-4 rounded-2xl glass-pill flex items-start gap-3 text-xs text-on-surface">
             <ShieldCheck className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
             <div>
               <span className="font-semibold text-primary">YOUR PRIVACY MATTERS:</span> We only collect what is strictly necessary to pick up, route, and deliver your orders safely. We never sell your personal data.
             </div>
           </div>
 
-          <div className="bg-surface-container-lowest p-8 sm:p-12 rounded-3xl border border-surface-container-high shadow-sm space-y-6 text-on-surface text-sm leading-relaxed">
-            <div className="border-b border-surface-container-high pb-4">
-              <span className="text-xs font-mono text-secondary uppercase font-semibold">DATA PRIVACY</span>
-              <h1 className="text-3xl font-medium text-primary mt-1 font-sans">Privacy Policy</h1>
+          <div className="glass-panel p-8 sm:p-12 rounded-3xl space-y-6 text-on-surface text-sm leading-relaxed">
+            <div className="border-b border-white/60 pb-4">
+              <span className="text-xs font-mono text-secondary uppercase font-semibold px-2.5 py-0.5 rounded-full glass-pill">
+                DATA PRIVACY
+              </span>
+              <h1 className="text-3xl font-medium text-primary mt-2 font-sans">Privacy Policy</h1>
             </div>
 
             <section className="space-y-2">

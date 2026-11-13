@@ -17,7 +17,7 @@ export function FinalCtaSection() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto space-y-6"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container border border-surface-container-high/20 text-xs font-mono text-secondary-container font-medium">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill-dark text-xs font-mono text-secondary-container font-medium">
             <span className="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse" />
             <span>[ READY TO GET STARTED? ]</span>
           </div>
@@ -34,7 +34,7 @@ export function FinalCtaSection() {
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
               <Link
                 href="/business"
-                className="px-7 py-3 rounded-full bg-surface text-primary text-xs font-semibold hover:bg-surface-bright transition-all shadow-lg inline-flex items-center gap-2"
+                className="px-7 py-3.5 rounded-full bg-surface text-primary text-xs font-semibold hover:bg-surface-bright transition-all shadow-xl inline-flex items-center gap-2"
               >
                 <span>For Local Businesses</span>
                 <ArrowRight className="w-4 h-4" />
@@ -44,7 +44,7 @@ export function FinalCtaSection() {
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
               <Link
                 href="/partners"
-                className="px-7 py-3 rounded-full bg-primary-container text-on-primary text-xs font-semibold hover:bg-surface-container-highest/20 transition-all border border-surface-container-high/20 inline-flex items-center gap-2"
+                className="px-7 py-3.5 rounded-full glass-panel-dark-subtle text-on-primary text-xs font-semibold hover:bg-white/10 transition-all inline-flex items-center gap-2"
               >
                 <span>Earn as a Delivery Partner</span>
               </Link>
@@ -53,7 +53,7 @@ export function FinalCtaSection() {
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
               <Link
                 href="/contact"
-                className="px-6 py-3 rounded-full bg-transparent text-on-primary text-xs font-semibold hover:text-secondary-container transition-colors inline-flex items-center gap-2"
+                className="px-6 py-3.5 rounded-full glass-pill-dark text-on-primary text-xs font-semibold hover:text-secondary-container hover:bg-white/15 transition-all inline-flex items-center gap-2"
               >
                 <span>Contact Our Team</span>
               </Link>

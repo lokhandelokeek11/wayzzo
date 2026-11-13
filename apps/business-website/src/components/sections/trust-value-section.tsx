@@ -88,10 +88,8 @@ export function TrustValueSection() {
                   {item.description}
                 </p>
               </div>
-                </p>
-              </div>
 
-              <div className="mt-6 pt-4 border-t border-surface-container-high font-mono text-[10px] text-secondary uppercase font-medium">
+              <div className="mt-6 pt-4 border-t border-white/60 font-mono text-[10px] text-secondary uppercase font-medium">
                 Core Principle
               </div>
             </motion.div>

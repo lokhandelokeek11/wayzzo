@@ -31,13 +31,13 @@ export function PartnerApplicationForm() {
 
   if (submitted && submissionData) {
     return (
-      <div className="bg-surface-container-low border border-surface-container-high rounded-2xl p-8 text-center animate-fade-in">
+      <div className="glass-panel rounded-3xl p-8 text-center animate-fade-in">
         <CheckCircle2 className="w-10 h-10 text-secondary mx-auto mb-3" />
         <h3 className="text-lg font-medium text-primary mb-2 font-sans">Application Ingested</h3>
         <p className="text-on-surface-variant max-w-md mx-auto text-xs leading-relaxed mb-4">
           Welcome, <span className="font-semibold text-primary">{submissionData.fullName}</span>! Our partner compliance desk will reach out at <span className="font-semibold text-primary">{submissionData.mobileNumber}</span> to assist with document upload (DL, RC, Aadhaar).
         </p>
-        <div className="bg-surface-container-lowest rounded-lg p-3 max-w-sm mx-auto text-xs text-on-surface-variant border border-surface-container-high font-mono">
+        <div className="glass-pill p-3 max-w-sm mx-auto text-xs text-on-surface-variant font-mono">
           <p>APPLICATION ID: WY-PTR-{Math.floor(100000 + Math.random() * 900000)}</p>
         </div>
         <button
@@ -52,12 +52,12 @@ export function PartnerApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 bg-surface-container-lowest p-6 sm:p-8 rounded-2xl border border-surface-container-high shadow-sm">
-      <div className="border-b border-surface-container-high pb-4 mb-2">
-        <span className="font-mono text-[10px] uppercase tracking-wider text-secondary">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 glass-panel p-6 sm:p-8 rounded-3xl">
+      <div className="border-b border-white/60 pb-4 mb-2">
+        <span className="font-mono text-[10px] uppercase tracking-wider text-secondary px-2.5 py-0.5 rounded-full glass-pill">
           ADMISSIONS PROTOCOL
         </span>
-        <h3 className="text-lg font-medium text-primary mt-1 font-sans">Delivery Partner Application</h3>
+        <h3 className="text-lg font-medium text-primary mt-2 font-sans">Delivery Partner Application</h3>
       </div>
 
       <div>
@@ -68,7 +68,7 @@ export function PartnerApplicationForm() {
           {...register('fullName')}
           type="text"
           placeholder="e.g. Suresh Kumar"
-          className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+          className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
         />
         {errors.fullName && (
           <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -83,13 +83,13 @@ export function PartnerApplicationForm() {
             Mobile Number *
           </label>
           <div className="relative">
-            <span className="absolute left-3 top-2 text-xs text-on-surface-variant font-mono">+91</span>
+            <span className="absolute left-3.5 top-2.5 text-xs text-on-surface-variant font-mono">+91</span>
             <input
               {...register('mobileNumber')}
               type="tel"
               maxLength={10}
               placeholder="9876543210"
-              className="w-full pl-11 pr-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+              className="w-full pl-11 pr-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
             />
           </div>
           {errors.mobileNumber && (
@@ -107,7 +107,7 @@ export function PartnerApplicationForm() {
             {...register('email')}
             type="email"
             placeholder="suresh@gmail.com"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
           />
           {errors.email && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -127,7 +127,7 @@ export function PartnerApplicationForm() {
             type="text"
             placeholder="Pune"
             defaultValue="Pune"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
           />
           {errors.city && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -142,7 +142,7 @@ export function PartnerApplicationForm() {
           </label>
           <select
             {...register('vehicleType')}
-            className="w-full px-3 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3 py-2.5 text-xs rounded-xl glass-input text-primary"
           >
             <option value="">Select vehicle</option>
             <option value="MOTORCYCLE">Motorcycle / Bike</option>
@@ -163,7 +163,7 @@ export function PartnerApplicationForm() {
           </label>
           <select
             {...register('availability')}
-            className="w-full px-3 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3 py-2.5 text-xs rounded-xl glass-input text-primary"
           >
             <option value="">Select availability</option>
             <option value="FULL_TIME">Full Time (8+ hrs)</option>
@@ -184,7 +184,7 @@ export function PartnerApplicationForm() {
           <input
             {...register('consentToContact')}
             type="checkbox"
-            className="mt-0.5 h-3.5 w-3.5 rounded border-surface-container-high text-primary focus:ring-0"
+            className="mt-0.5 h-3.5 w-3.5 rounded border-white/60 text-primary focus:ring-0"
           />
           <span className="text-[11px] text-on-surface-variant leading-normal">
             I confirm that I hold a valid Driving Licence (or use an eligible cycle), possess necessary registration/insurance for my vehicle, and consent to being contacted by wayzzo for verification.
@@ -200,7 +200,7 @@ export function PartnerApplicationForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-2.5 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        className="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shadow-md"
       >
         {isSubmitting ? (
           <>

@@ -56,7 +56,7 @@ export function GeneralContactForm() {
             {...register('name')}
             type="text"
             placeholder="Ankit Sharma"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
           />
           {errors.name && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -73,7 +73,7 @@ export function GeneralContactForm() {
             {...register('email')}
             type="email"
             placeholder="ankit@example.com"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
           />
           {errors.email && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -89,13 +89,13 @@ export function GeneralContactForm() {
             Mobile Number (10 digits) *
           </label>
           <div className="relative">
-            <span className="absolute left-3 top-2 text-xs text-on-surface-variant font-mono">+91</span>
+            <span className="absolute left-3.5 top-2.5 text-xs text-on-surface-variant font-mono">+91</span>
             <input
               {...register('phone')}
               type="tel"
               maxLength={10}
               placeholder="9876543210"
-              className="w-full pl-11 pr-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+              className="w-full pl-11 pr-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
             />
           </div>
           {errors.phone && (
@@ -111,7 +111,7 @@ export function GeneralContactForm() {
           </label>
           <select
             {...register('inquiryType')}
-            className="w-full px-3 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3 py-2.5 text-xs rounded-xl glass-input text-primary"
           >
             <option value="">Select category</option>
             <option value="GENERAL">General Inquiry / Feedback</option>
@@ -135,7 +135,7 @@ export function GeneralContactForm() {
           {...register('message')}
           rows={4}
           placeholder="How can we assist you or your business?"
-          className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary resize-none"
+          className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary resize-none"
         />
         {errors.message && (
           <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -147,7 +147,7 @@ export function GeneralContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-2.5 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        className="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shadow-md"
       >
         {isSubmitting ? (
           <>

@@ -39,7 +39,7 @@ export default function BusinessPage() {
         <section className="relative w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-20 flex flex-col items-center justify-center text-center overflow-hidden border-b border-surface-container-high">
           <div className="max-w-[1240px] mx-auto w-full flex flex-col items-center">
             
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-surface-container-high mb-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill mb-6">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse flex-shrink-0" />
               <span className="font-mono text-[10px] sm:text-xs text-on-surface-variant tracking-wider uppercase font-semibold">
                 [ EASY LOCAL DELIVERIES FOR BUSINESSES ]
@@ -64,7 +64,7 @@ export default function BusinessPage() {
               </a>
               <a
                 href="#inquiry"
-                className="h-11 sm:h-10 px-6 rounded-full bg-surface-container-lowest text-on-surface text-xs font-semibold hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-center gap-2 border border-surface-container-high min-h-[44px]"
+                className="h-11 sm:h-10 px-6 rounded-full glass-panel-subtle text-on-surface text-xs font-semibold hover:bg-white/90 transition-all shadow-sm flex items-center justify-center gap-2 min-h-[44px]"
               >
                 <Store className="w-3.5 h-3.5 text-on-surface-variant" />
                 <span>Talk with Our Team</span>
@@ -75,13 +75,13 @@ export default function BusinessPage() {
         </section>
 
         {/* Comparison Grid */}
-        <section className="py-16 sm:py-20 bg-surface-container-lowest border-b border-surface-container-high">
+        <section className="py-16 sm:py-20 bg-white/30 backdrop-blur-md border-b border-white/60">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-14">
-              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
                 WHY IT MAKES SENSE
               </span>
-              <h2 className="text-3xl font-medium text-primary mt-1 font-sans">
+              <h2 className="text-3xl font-medium text-primary mt-3 font-sans">
                 Keep 100% of Your Store Margins
               </h2>
             </div>
@@ -90,16 +90,16 @@ export default function BusinessPage() {
               {painPoints.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-surface border border-surface-container-high space-y-3"
+                  className="p-6 rounded-3xl glass-panel-subtle glass-panel-hover space-y-3"
                 >
                   <div className="flex items-start gap-2.5 text-xs text-error font-medium">
-                    <span className="px-2 py-0.5 rounded bg-error-container text-on-error-container uppercase text-[10px] font-mono font-semibold">
+                    <span className="px-2 py-0.5 rounded-full bg-error-container text-on-error-container uppercase text-[10px] font-mono font-semibold">
                       The Old Problem
                     </span>
                     <span className="leading-relaxed">{item.problem}</span>
                   </div>
-                  <div className="flex items-start gap-2.5 text-xs text-primary font-medium pt-2 border-t border-surface-container-high">
-                    <span className="px-2 py-0.5 rounded bg-surface-container-highest text-primary uppercase text-[10px] font-mono font-semibold">
+                  <div className="flex items-start gap-2.5 text-xs text-primary font-medium pt-2 border-t border-white/60">
+                    <span className="px-2 py-0.5 rounded-full glass-pill text-primary uppercase text-[10px] font-mono font-semibold">
                       The Wayzzo Way
                     </span>
                     <span className="leading-relaxed">{item.solution}</span>
@@ -111,13 +111,13 @@ export default function BusinessPage() {
         </section>
 
         {/* Business Options */}
-        <section className="py-16 sm:py-20 bg-surface border-b border-surface-container-high">
+        <section className="py-16 sm:py-20 bg-transparent border-b border-white/60">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
                 HOW YOU CAN USE IT
               </span>
-              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-1 font-sans">
+              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-3 font-sans">
                 Simple Options for Every Kind of Business
               </h2>
               <p className="text-sm text-on-surface-variant mt-2">
@@ -127,9 +127,9 @@ export default function BusinessPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {/* Option 1 */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest border border-surface-container-high flex flex-col justify-between shadow-sm">
+              <div className="p-6 sm:p-8 rounded-3xl glass-panel glass-panel-hover flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-surface-container-high text-primary font-semibold">
+                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full glass-pill text-primary font-semibold">
                     OPTION 01 // PAY-AS-YOU-GO
                   </span>
                   <h3 className="text-xl font-medium text-primary mt-4 mb-2 font-sans">Occasional Deliveries</h3>
@@ -149,10 +149,10 @@ export default function BusinessPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="mt-8 pt-4 border-t border-surface-container-high">
+                <div className="mt-8 pt-4 border-t border-white/60">
                   <a
                     href="#inquiry"
-                    className="block text-center py-3 px-4 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface min-h-[44px] flex items-center justify-center"
+                    className="block text-center py-3 px-4 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface min-h-[44px] flex items-center justify-center shadow-sm"
                   >
                     Get Started
                   </a>
@@ -160,9 +160,9 @@ export default function BusinessPage() {
               </div>
 
               {/* Option 2 */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-primary text-on-primary border border-surface-container-high shadow-xl flex flex-col justify-between relative">
+              <div className="p-6 sm:p-8 rounded-3xl glass-panel-dark glass-panel-dark-hover text-on-primary flex flex-col justify-between relative">
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-primary-container text-secondary-container font-semibold">
+                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full glass-pill-dark text-secondary-container font-semibold">
                     OPTION 02 // DAILY BATCHES
                   </span>
                   <h3 className="text-xl font-medium text-on-primary mt-4 mb-2 font-sans">Busy Local Stores</h3>
@@ -182,10 +182,10 @@ export default function BusinessPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="mt-8 pt-4 border-t border-surface-container-high/20">
+                <div className="mt-8 pt-4 border-t border-white/10">
                   <a
                     href="#inquiry"
-                    className="block text-center py-3 px-4 rounded-full bg-surface text-primary text-xs font-semibold hover:bg-surface-bright min-h-[44px] flex items-center justify-center"
+                    className="block text-center py-3 px-4 rounded-full bg-surface text-primary text-xs font-semibold hover:bg-surface-bright min-h-[44px] flex items-center justify-center shadow-lg"
                   >
                     Talk About Daily Rates
                   </a>
@@ -193,9 +193,9 @@ export default function BusinessPage() {
               </div>
 
               {/* Option 3 */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-surface-container-lowest border border-surface-container-high flex flex-col justify-between shadow-sm">
+              <div className="p-6 sm:p-8 rounded-3xl glass-panel glass-panel-hover flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded bg-surface-container-high text-primary font-semibold">
+                  <span className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-full glass-pill text-primary font-semibold">
                     OPTION 03 // MULTI-OUTLET
                   </span>
                   <h3 className="text-xl font-medium text-primary mt-4 mb-2 font-sans">Brands &amp; Chains</h3>
@@ -215,10 +215,10 @@ export default function BusinessPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="mt-8 pt-4 border-t border-surface-container-high">
+                <div className="mt-8 pt-4 border-t border-white/60">
                   <a
                     href="#inquiry"
-                    className="block text-center py-3 px-4 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface min-h-[44px] flex items-center justify-center"
+                    className="block text-center py-3 px-4 rounded-full bg-primary text-on-primary text-xs font-semibold hover:bg-inverse-surface min-h-[44px] flex items-center justify-center shadow-sm"
                   >
                     Talk with Solutions Team
                   </a>
@@ -229,13 +229,13 @@ export default function BusinessPage() {
         </section>
 
         {/* Business Form Section */}
-        <section id="inquiry" className="py-16 sm:py-20 bg-surface-container-lowest">
+        <section id="inquiry" className="py-16 sm:py-20 bg-white/30 backdrop-blur-md">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
                 GET IN TOUCH
               </span>
-              <h2 className="text-3xl font-medium text-primary mt-1 font-sans">
+              <h2 className="text-3xl font-medium text-primary mt-3 font-sans">
                 Start Delivering with wayzzo
               </h2>
               <p className="text-sm text-on-surface-variant mt-2">

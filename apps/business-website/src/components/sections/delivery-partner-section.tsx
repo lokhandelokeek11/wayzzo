@@ -18,7 +18,7 @@ export function DeliveryPartnerSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container border border-surface-container-high/20 mb-6"
+          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill-dark mb-6"
         >
           <span className="w-2 h-2 rounded-full bg-secondary-container animate-pulse flex-shrink-0" />
           <span className="font-mono text-[10px] sm:text-xs text-secondary-fixed-dim uppercase tracking-wider font-semibold">
@@ -65,7 +65,7 @@ export function DeliveryPartnerSection() {
           </Link>
           <Link
             href="/partner-terms"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-primary-container text-on-primary text-xs font-semibold hover:bg-surface-container-highest/20 transition-all border border-surface-container-high/20 min-h-[44px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full glass-panel-dark-subtle text-on-primary text-xs font-semibold hover:bg-white/10 transition-all min-h-[44px]"
           >
             <ShieldCheck className="w-4 h-4 text-secondary-container" />
             <span>Read Partner Guidelines</span>
@@ -78,7 +78,7 @@ export function DeliveryPartnerSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-12 sm:mt-14 relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden bg-primary-container border border-surface-container-high/20 shadow-2xl"
+          className="mt-12 sm:mt-14 relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden glass-panel-dark"
         >
           <div className="relative w-full h-[360px] sm:h-[420px] md:h-[480px]">
             <img
@@ -88,17 +88,17 @@ export function DeliveryPartnerSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent" />
 
-            {/* Floating Earnings Card */}
+            {/* Floating Earnings Card - Dark Frosted Glass */}
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 p-3.5 sm:p-4 bg-primary-container/95 backdrop-blur-md rounded-xl border border-surface-container-high/20 shadow-xl flex items-center justify-between gap-4 max-w-md"
+              className="absolute bottom-4 left-4 right-4 md:left-auto md:right-8 md:bottom-8 p-4 glass-panel-dark rounded-2xl flex items-center justify-between gap-4 max-w-md"
             >
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container flex-shrink-0">
-                  <Wallet className="w-4 h-4 sm:w-5 sm:h-5" />
+                <div className="w-10 h-10 rounded-xl bg-secondary-container/20 border border-secondary-container/30 flex items-center justify-center text-secondary-container flex-shrink-0">
+                  <Wallet className="w-5 h-5" />
                 </div>
                 <div className="text-left">
                   <span className="font-mono text-[9px] sm:text-[10px] uppercase text-on-primary-container tracking-wider block font-semibold">
@@ -111,16 +111,16 @@ export function DeliveryPartnerSection() {
               </div>
 
               <div className="text-right">
-                <span className="inline-flex items-center gap-1 font-mono text-[10px] sm:text-[11px] text-secondary-container font-medium">
+                <span className="inline-flex items-center gap-1 font-mono text-[10px] sm:text-[11px] text-secondary-container font-medium px-2 py-0.5 rounded-full glass-pill-dark">
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse" />
                   DAILY PAYOUTS
                 </span>
-                <span className="block text-[11px] sm:text-xs text-on-primary-container">Straight to UPI / Bank</span>
+                <span className="block text-[11px] sm:text-xs text-on-primary-container mt-1">Straight to UPI / Bank</span>
               </div>
             </motion.div>
 
             {/* Watermark Tag */}
-            <div className="hidden sm:flex absolute top-4 sm:top-6 left-4 sm:left-6 items-center gap-2 font-mono text-[10px] sm:text-[11px] text-on-primary-container/70 bg-primary/60 px-3 py-1 rounded-full backdrop-blur-sm border border-surface-container-high/20 font-medium">
+            <div className="hidden sm:flex absolute top-4 sm:top-6 left-4 sm:left-6 items-center gap-2 font-mono text-[10px] sm:text-[11px] text-white/90 glass-pill-dark px-3.5 py-1.5 rounded-full font-medium">
               <span>ELIGIBLE: MOTORCYCLES, SCOOTERS &amp; EV</span>
               <span>•</span>
               <span>REQUIREMENTS: DRIVING LICENCE &amp; RC</span>

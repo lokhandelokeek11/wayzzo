@@ -33,8 +33,8 @@ export function WhyChooseUsSection() {
   ];
 
   return (
-    <section className="w-full bg-surface-container-lowest py-16 sm:py-24 border-b border-surface-container-high">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white/20 backdrop-blur-md py-16 sm:py-24 border-b border-white/60 relative overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -43,10 +43,10 @@ export function WhyChooseUsSection() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl mx-auto text-center mb-16"
         >
-          <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+          <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
             WHY WAYZZO
           </span>
-          <h2 className="text-3xl sm:text-4xl font-medium text-primary tracking-tight mt-2 font-sans">
+          <h2 className="text-3xl sm:text-4xl font-medium text-primary tracking-tight mt-3 font-sans">
             A Smarter Way to Move Things Around Your City
           </h2>
           <p className="text-base text-on-surface-variant mt-3 leading-relaxed">
@@ -63,10 +63,10 @@ export function WhyChooseUsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
               whileHover={{ y: -4 }}
-              className="p-8 rounded-2xl bg-surface border border-surface-container-high hover:border-primary/20 hover:shadow-sm transition-all flex flex-col justify-between"
+              className="p-8 rounded-3xl glass-panel glass-panel-hover flex flex-col justify-between"
             >
               <div>
-                <span className="font-mono text-[10px] text-secondary tracking-widest block mb-3 font-semibold">
+                <span className="font-mono text-[10px] text-secondary tracking-widest block mb-3 font-semibold px-2 py-0.5 rounded glass-pill inline-block">
                   {item.code}
                 </span>
                 <h3 className="text-lg font-medium text-primary mb-2 font-sans">{item.title}</h3>
@@ -75,7 +75,7 @@ export function WhyChooseUsSection() {
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-surface-container-high font-mono text-[10px] text-on-surface-variant uppercase font-medium">
+              <div className="mt-6 pt-4 border-t border-white/60 font-mono text-[10px] text-on-surface-variant uppercase font-medium">
                 Our Advantage
               </div>
             </motion.div>

@@ -28,13 +28,13 @@ export function BusinessInquiryForm() {
 
   if (submitted && submissionData) {
     return (
-      <div className="bg-surface-container-low border border-surface-container-high rounded-2xl p-8 text-center animate-fade-in">
+      <div className="glass-panel rounded-3xl p-8 text-center animate-fade-in">
         <CheckCircle2 className="w-10 h-10 text-secondary mx-auto mb-3" />
         <h3 className="text-lg font-medium text-primary mb-2 font-sans">Inquiry Ingested</h3>
         <p className="text-on-surface-variant max-w-md mx-auto text-xs leading-relaxed mb-4">
           Thank you, <span className="font-semibold text-primary">{submissionData.contactPerson}</span> from <span className="font-semibold text-primary">{submissionData.businessName}</span>. Our merchant solutions desk will follow up at <span className="font-semibold text-primary">{submissionData.mobileNumber}</span> within 1 business day.
         </p>
-        <div className="bg-surface-container-lowest rounded-lg p-3 max-w-sm mx-auto text-xs text-on-surface-variant border border-surface-container-high font-mono">
+        <div className="glass-pill p-3 max-w-sm mx-auto text-xs text-on-surface-variant font-mono">
           <p>REFERENCE: INQ-BIZ-{Math.floor(100000 + Math.random() * 900000)}</p>
         </div>
         <button
@@ -49,8 +49,8 @@ export function BusinessInquiryForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 bg-surface-container-lowest p-6 sm:p-8 rounded-2xl border border-surface-container-high shadow-sm">
-      <div className="border-b border-surface-container-high pb-4 mb-2">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 glass-panel p-6 sm:p-8 rounded-3xl">
+      <div className="border-b border-white/60 pb-4 mb-2">
         <h3 className="text-lg font-medium text-primary font-sans">Partner With wayzzo</h3>
         <p className="text-xs text-on-surface-variant mt-1">
           Tell us about your business delivery requirements. No long-term commitments required.
@@ -66,7 +66,7 @@ export function BusinessInquiryForm() {
             {...register('businessName')}
             type="text"
             placeholder="e.g. Fresh Bakes Café"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
           />
           {errors.businessName && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -83,7 +83,7 @@ export function BusinessInquiryForm() {
             {...register('contactPerson')}
             type="text"
             placeholder="e.g. Ramesh Kumar"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
           />
           {errors.contactPerson && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -99,13 +99,13 @@ export function BusinessInquiryForm() {
             Mobile Number (10 digits) *
           </label>
           <div className="relative">
-            <span className="absolute left-3 top-2 text-xs text-on-surface-variant font-mono">+91</span>
+            <span className="absolute left-3.5 top-2.5 text-xs text-on-surface-variant font-mono">+91</span>
             <input
               {...register('mobileNumber')}
               type="tel"
               maxLength={10}
               placeholder="9876543210"
-              className="w-full pl-11 pr-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+              className="w-full pl-11 pr-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
             />
           </div>
           {errors.mobileNumber && (
@@ -123,7 +123,7 @@ export function BusinessInquiryForm() {
             {...register('email')}
             type="email"
             placeholder="contact@business.com"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary font-mono"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary font-mono"
           />
           {errors.email && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -140,7 +140,7 @@ export function BusinessInquiryForm() {
           </label>
           <select
             {...register('businessCategory')}
-            className="w-full px-3 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3 py-2.5 text-xs rounded-xl glass-input text-primary"
           >
             <option value="">Select category</option>
             <option value="RETAIL">Retail / Boutique</option>
@@ -167,7 +167,7 @@ export function BusinessInquiryForm() {
             type="text"
             placeholder="Pune"
             defaultValue="Pune"
-            className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary"
           />
           {errors.city && (
             <p className="text-[11px] text-error mt-1 flex items-center gap-1">
@@ -182,7 +182,7 @@ export function BusinessInquiryForm() {
           </label>
           <select
             {...register('estimatedDailyDeliveries')}
-            className="w-full px-3 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary"
+            className="w-full px-3 py-2.5 text-xs rounded-xl glass-input text-primary"
           >
             <option value="">Select volume</option>
             <option value="1_TO_10">1 – 10 / day</option>
@@ -206,14 +206,14 @@ export function BusinessInquiryForm() {
           {...register('additionalMessage')}
           rows={3}
           placeholder="Special handling, package dimensions, or operating hours..."
-          className="w-full px-3.5 py-2 text-xs rounded border border-surface-container-high bg-surface focus:outline-none focus:border-primary text-primary resize-none"
+          className="w-full px-3.5 py-2.5 text-xs rounded-xl glass-input text-primary resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full py-2.5 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
+        className="w-full py-3 px-6 rounded-full bg-primary text-on-primary font-medium text-xs hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shadow-md"
       >
         {isSubmitting ? (
           <>

@@ -13,7 +13,7 @@ export function AccordionItem({ question, answer, defaultOpen = false }: Accordi
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border border-surface-container-high rounded-xl overflow-hidden bg-surface-container-lowest transition-all">
+    <div className="border border-white/70 rounded-2xl overflow-hidden glass-panel-subtle transition-all">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -28,7 +28,7 @@ export function AccordionItem({ question, answer, defaultOpen = false }: Accordi
         />
       </button>
       {isOpen && (
-        <div className="px-5 pb-5 text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-surface-container-high/60 pt-3 font-normal">
+        <div className="px-5 pb-5 text-on-surface-variant text-xs sm:text-sm leading-relaxed border-t border-white/60 pt-3 font-normal">
           {answer}
         </div>
       )}

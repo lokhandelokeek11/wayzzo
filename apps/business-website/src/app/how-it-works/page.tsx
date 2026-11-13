@@ -37,12 +37,12 @@ export default function HowItWorksPage() {
 
       <main className="flex-1 pt-16">
         {/* Hero Section */}
-        <section className="relative w-full pt-12 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center border-b border-surface-container-high">
+        <section className="relative w-full pt-12 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center border-b border-white/60">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-surface-container-high mb-6"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill mb-6"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />
             <span className="font-mono text-xs text-on-surface-variant uppercase tracking-widest font-medium">
@@ -73,25 +73,25 @@ export default function HowItWorksPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-full max-w-4xl bg-surface-container-lowest rounded-2xl p-4 border border-surface-container-high shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 sm:gap-4 px-4 sm:px-8"
+            className="w-full max-w-4xl glass-panel rounded-2xl p-4 shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 sm:gap-4 px-4 sm:px-8"
           >
             <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-between md:justify-start">
               <span className="font-mono text-[10px] sm:text-[11px] text-on-surface-variant uppercase">DELIVERY METHOD</span>
-              <span className="font-mono text-[10px] sm:text-xs font-semibold text-primary bg-surface-container-high px-2 py-0.5 rounded">
+              <span className="font-mono text-[10px] sm:text-xs font-semibold text-primary glass-pill px-2.5 py-0.5 rounded-full">
                 DIRECT DOORSTEP PICKUP &amp; DROP
               </span>
             </div>
-            <div className="hidden md:block w-px h-4 bg-surface-container-high" />
+            <div className="hidden md:block w-px h-4 bg-white/60" />
             <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-between md:justify-start">
               <span className="font-mono text-[10px] sm:text-[11px] text-on-surface-variant uppercase">RIDERS</span>
-              <span className="font-mono text-[10px] sm:text-xs font-semibold text-secondary bg-secondary-fixed/40 px-2 py-0.5 rounded">
+              <span className="font-mono text-[10px] sm:text-xs font-semibold text-secondary glass-pill px-2.5 py-0.5 rounded-full">
                 NEARBY VERIFIED PARTNERS
               </span>
             </div>
-            <div className="hidden md:block w-px h-4 bg-surface-container-high" />
+            <div className="hidden md:block w-px h-4 bg-white/60" />
             <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-between md:justify-start">
               <span className="font-mono text-[10px] sm:text-[11px] text-on-surface-variant uppercase">SAFETY</span>
-              <span className="font-mono text-[10px] sm:text-xs font-semibold text-primary bg-surface-container-high px-2 py-0.5 rounded">
+              <span className="font-mono text-[10px] sm:text-xs font-semibold text-primary glass-pill px-2.5 py-0.5 rounded-full">
                 SAFE 4-DIGIT PIN CONFIRMATION
               </span>
             </div>
@@ -105,19 +105,19 @@ export default function HowItWorksPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="bg-surface-container-lowest rounded-2xl p-5 sm:p-8 md:p-12 border border-surface-container-high shadow-sm relative overflow-hidden"
+            className="glass-panel rounded-3xl p-6 sm:p-10 md:p-14 relative overflow-hidden"
           >
             
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
               <div>
-                <span className="font-mono text-xs text-secondary uppercase tracking-wider block mb-1 font-semibold">
+                <span className="font-mono text-xs text-secondary uppercase tracking-wider block mb-1 font-semibold px-2.5 py-0.5 rounded-full glass-pill inline-block">
                   STEP-BY-STEP PROCESS
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-medium text-primary font-sans">
+                <h2 className="text-2xl sm:text-3xl font-medium text-primary font-sans mt-2">
                   From Booking to Handover in 3 Easy Steps
                 </h2>
               </div>
-              <div className="font-mono text-xs text-on-surface-variant flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full border border-surface-container-high">
+              <div className="font-mono text-xs text-on-surface-variant flex items-center gap-2 glass-pill px-3.5 py-1.5 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
                 <span>DIRECT NEIGHBORHOOD DELIVERIES</span>
               </div>
@@ -128,7 +128,7 @@ export default function HowItWorksPage() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className="bg-surface-container-low/70 rounded-xl p-6 border border-surface-container-high flex flex-col justify-between"
+                className="glass-panel-subtle glass-panel-hover rounded-2xl p-6 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -140,7 +140,7 @@ export default function HowItWorksPage() {
                     Enter the pickup location, delivery address, and a brief description of the package. You immediately see the exact price before you pay.
                   </p>
                 </div>
-                <div className="bg-surface-container-lowest p-3 rounded-lg border border-surface-container-high space-y-1 font-mono text-[11px] text-on-surface-variant">
+                <div className="glass-pill p-3.5 rounded-xl space-y-1 font-mono text-[11px] text-on-surface-variant">
                   <div className="flex justify-between">
                     <span>ROUTE:</span>
                     <span className="text-primary font-medium">Door-to-Door Direct</span>
@@ -156,7 +156,7 @@ export default function HowItWorksPage() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className="bg-surface-container-low/70 rounded-xl p-6 border border-surface-container-high flex flex-col justify-between"
+                className="glass-panel-subtle glass-panel-hover rounded-2xl p-6 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -168,7 +168,7 @@ export default function HowItWorksPage() {
                     A verified delivery partner on a bike or scooter close to your location accepts the job and arrives quickly to collect the parcel.
                   </p>
                 </div>
-                <div className="bg-surface-container-lowest p-3 rounded-lg border border-surface-container-high space-y-1 font-mono text-[11px] text-on-surface-variant">
+                <div className="glass-pill p-3.5 rounded-xl space-y-1 font-mono text-[11px] text-on-surface-variant">
                   <div className="flex justify-between">
                     <span>MATCHING:</span>
                     <span className="text-primary font-medium">Nearest Available Rider</span>
@@ -184,7 +184,7 @@ export default function HowItWorksPage() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className="bg-surface-container-low/70 rounded-xl p-6 border border-surface-container-high flex flex-col justify-between"
+                className="glass-panel-subtle glass-panel-hover rounded-2xl p-6 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -196,7 +196,7 @@ export default function HowItWorksPage() {
                     Track the trip live on the map. When the rider arrives at the destination, they verify the 4-digit PIN to ensure safe and successful delivery.
                   </p>
                 </div>
-                <div className="bg-surface-container-lowest p-3 rounded-lg border border-surface-container-high space-y-1 font-mono text-[11px] text-on-surface-variant">
+                <div className="glass-pill p-3.5 rounded-xl space-y-1 font-mono text-[11px] text-on-surface-variant">
                   <div className="flex justify-between">
                     <span>VERIFICATION:</span>
                     <span className="text-emerald-600 font-medium">4-Digit PIN Handover</span>
@@ -213,7 +213,7 @@ export default function HowItWorksPage() {
         </section>
 
         {/* FAQs */}
-        <section className="py-16 sm:py-20 bg-surface-container-low border-t border-surface-container-high">
+        <section className="py-16 sm:py-20 bg-white/30 backdrop-blur-md border-t border-white/60">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">

@@ -72,7 +72,7 @@ export default function PartnersPage() {
           <div className="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(255,166,115,0.25),rgba(28,27,27,0))]" />
           
           <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container border border-surface-container-high/20 mb-6">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill-dark mb-6">
               <span className="w-2 h-2 rounded-full bg-secondary-container animate-pulse" />
               <span className="font-mono text-xs text-secondary-fixed-dim uppercase tracking-wider font-semibold">
                 [ PARTNER REGISTRATION OPEN ]
@@ -99,13 +99,13 @@ export default function PartnersPage() {
         </section>
 
         {/* Requirements Section */}
-        <section className="py-16 sm:py-20 bg-surface-container-lowest border-b border-surface-container-high">
+        <section className="py-16 sm:py-20 bg-white/20 backdrop-blur-md border-b border-white/60">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
                 WHAT YOU NEED
               </span>
-              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-1 font-sans">
+              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-3 font-sans">
                 Requirements to Join
               </h2>
               <p className="text-sm text-on-surface-variant mt-2">
@@ -117,7 +117,7 @@ export default function PartnersPage() {
               {criteria.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-surface border border-surface-container-high space-y-2 flex flex-col justify-between"
+                  className="p-6 rounded-3xl glass-panel glass-panel-hover space-y-2 flex flex-col justify-between"
                 >
                   <div>
                     <div className="flex items-center gap-2 mb-2">
@@ -128,7 +128,7 @@ export default function PartnersPage() {
                       {item.desc}
                     </p>
                   </div>
-                  <div className="pt-3 border-t border-surface-container-high font-mono text-[10px] text-on-surface-variant uppercase font-medium">
+                  <div className="pt-3 border-t border-white/60 font-mono text-[10px] text-on-surface-variant uppercase font-medium">
                     Required Document
                   </div>
                 </div>
@@ -138,13 +138,13 @@ export default function PartnersPage() {
         </section>
 
         {/* Application Form */}
-        <section id="apply" className="py-16 sm:py-20 bg-surface border-b border-surface-container-high">
+        <section id="apply" className="py-16 sm:py-20 bg-transparent border-b border-white/60">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
+              <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold px-3 py-1 rounded-full glass-pill">
                 APPLY TODAY
               </span>
-              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-1 font-sans">
+              <h2 className="text-2xl sm:text-3xl font-medium text-primary mt-3 font-sans">
                 Register as a Delivery Partner
               </h2>
               <p className="text-sm text-on-surface-variant mt-2">
@@ -157,7 +157,7 @@ export default function PartnersPage() {
         </section>
 
         {/* FAQs */}
-        <section className="py-16 sm:py-20 bg-surface-container-low">
+        <section className="py-16 sm:py-20 bg-white/30 backdrop-blur-md">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <span className="font-mono text-xs text-secondary uppercase tracking-widest font-semibold">
